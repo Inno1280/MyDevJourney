@@ -1,296 +1,78 @@
+<!-- 
+  TODO: Create a motivational post website.
+Style it how ever you like. 
+Look at the goal image for inspiration.
+But it must have the following features:
+1. The main h1 text should be using the Regular Libre Baskerville Font from Google Fonts:
+  https://fonts.google.com/specimen/Libre+Baskerville
+2. The text should be white and background black.
+3. Add your own image into the images folder inside assets. 
+It should have a 5px white border.
+4. The text should be center aligned.
+5. Create a div to contain the h1, p and img elements. 
+Adjust the margins so that the image and text are centered 
+on the page. 
+  Hint: You horizontally center a div by giving it a width 
+  of 50% and a margin-left of 25%.
+  Hint: Set the image to have a width of 100% so it fills 
+  the div. 
+6. Read about the text-transform property on MDN docs to 
+make the h1 uppercase with CSS.
+  https://developer.mozilla.org/en-US/docs/Web/CSS/text-transform 
+-->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>My Resume</title>
+  <meta charset="UTF-8">
+  
+  <title>Document</title>
+  <style>
+    
+    body{
+      background-color: black;
+    }
+    h1{
+      color: white;
+      text-transform: uppercase;
+    }
+    p{
+      color: white;
+    }
+    #div1{
+      text-align: center;
+      width: 50%;
+      margin-left: 25%;
+      margin-top: 100px;
+      
+    }
+    #image{
+      border: solid white;
+      border-width: 5px;
+      width: 100%; 
+      
+    }
+
+  </style>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+
 </head>
-
 <body>
-     <h1>INNOCENT NWEKE</h1>
-    <h3>Ux Designer & Full Stack Developer</h3>
-    <img width="300" height="380" src="./Assets/Images/Me1.jpeg" />
-    <hr>
-    <h2>Summary</h2>
+  <div id="div1">
+    <img id="image" src="./assets/images/einstein.jpg" />
+    <h1>
+      Words of Wisdom from a Wise man
+    </h1>
     <p>
-        An enthusiastic mid-level UX designer and full-stack
-         web developer. With a strong creative streak and the
-          ability to transform concepts into digital products
-           that puts the user front and center. Have varied 
-           experiences in the field of Arhitecture, 
-           engineering, and construction as well.
+      "Not everthing that can be counted counts and not 
+      everything that counts can be
+       counted" - <i>Albert Einstein</i>
     </p>
-    <hr>
-    <h2>Educational Background</h2>
-    <p>
-        <ul><li><b>B.Tech Architecture - 2016</b>   ------    Federal University of Technology Akure,
-        Ondo</li> [Second Class Honors]
-    </ul>
-    </p>
-    <hr>
-    <h2>Work Experiences</h2>
-    <p>
-        <ol>
-            <li><b>All Energy Streams [AES]  -------FCT Abuja, Nigeria </b></li>
-            Specializing in Energy solutions and ICT - Fibre optics infrastruture management. <br >
-            <br >
-            <i>Project Team Lead      -------------------------- 2022 till date </i>
-
-            <br >
-            <ul>
-                <li>Responsible for managing a team of engineers and tehnicians 
-                    tasked with preventing all threats that may lead to fibre optics failure </li>
-                <li>
-                    Assiting and guiding the Fibre optics infrasture management teams
-                     in the event of failures and ensuring that the threats 
-                     are resolved within the estimated restoration mean times.
-                    
-                </li>    
-                <li>
-                    Engaging in routine patrols and monitoring of implemented Fibre 
-                    Optics infrastructure, in order to identify any activities or event 
-                    around it that might pose a threat.
-                </li>
-                <li>
-                    Writing and submitting monthly reports on the state of the fibre infrastructure
-                    under the assigned segment.
-                </li>
-                <li>
-                    Visiting Sub-contractor's management centers to ensure that 
-                    they have the necessary equipments needed to maintain the infrasture
-                    they are contracted to manage and that these equipments are in good conditions.
-                </li>
-            </ul>
-            <hr >
-            <p>
-                <li><b>Barthel Architects ------- Lagos, Nigeria</b></li>
-                Specializes in building design, construction and real estate investments. <br >
-            <br >
-            <i>Project Arhitect      -------------------------- 2020 - 2022 </i>
-                
-            <br >
-            <ul>
-                <li> Interpreted design briefs to arrive at a build-able design </li>
-                <li>
-                    Visualize exterior and interior spaces for design projects.
-                    
-                </li>    
-                <li>
-                    Attend and coordinate meetings with clients.
-
-                </li>
-                <li>
-                    Coordinate construction projects from inception to finish.
-
-                </li>
-            </ul>
-            </p>
-
-            <hr >
-            
-            <p>
-                <li><b>Opulent Spaces, Ejigbo, Lagos, Nigeria</b></li>
-                Providing architectural services and Interior design works.<br >
-            <br >
-            <i>Architect and 3D Visualizer -------------- Dec 2017- Dec 2019
-            </i>
-                
-            <br >
-            <ul>
-                <li> Created conceptual designs presentations for residential and
-                    commercial interiors. </li>
-                <li>
-                    Created color schemes that describes various interior projects
-.
-                    
-                </li>    
-                <li>
-                    Responsible for scheduling, procuring and delivering interior
-                    accents and furnishings.
-
-                </li>
-                <li>
-                    Coordinate construction projects from inception to finish.
-
-                </li>
-            </ul>
-            </p>
-            
-        </ol>
-
-        <hr>
-
-    <h2>Skills</h2>
-    <ul>
-        <p>
-            <b>Technical Skills</b>
-        </p>
-        <ul>
-            <li>Adobe Illustrator ----------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-            </li>   
-            
-            <li>Adobe Photoshop ---------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-            </li> 
-
-            <li>Adobe In-Design ----------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-            </li> 
-
-            <li>Adobe Xd ------------------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-            </li> 
-
-            <li>Figma ------------------------ <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-            </li> 
-
-            
-        </ul></li> 
-
-        <hr>
-
-        <p>
-            <b>Language Stack</b>
-        </p>
-        <ul>
-            <li>HTML ------------------------ <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-            </li>   
-            
-            <li>CSS --------------------------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-            </li> 
-
-            <li>Javascript -------------------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-            </li> 
-
-            <li>Python ----------------------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-            </li> 
-
-            <li>Ruby ------------------------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-                <img style="height: 18px;"  src="./Assets/Images/Open dot.png"  />
-            </li>
-        </ul> 
-    <hr>
-        
-    <p>
-        <b>Soft Skills</b>
-    </p>
-    <ul>
-        <li>Communication ---------------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-        </li>   
-        
-        <li>Problem solving=--------------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-        </li> 
-
-        <li>Collaboration ------------------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-        </li> 
-
-        <li>Time management ------------- <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png" class="image-duplicate"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-            <img style="height: 1em;"  src="./Assets/Images/dot.png"  />
-        </li> 
-        </ul>
-    </ul> 
-
-    <hr>
-
-    <h2>Certifications</h2> 
-
-    <ul>
-        <li>Google Ux Professional Certificate.</li>
-        <li>Udemy - Proficiency certification in Figma</li>
-        <li>Udemy - Full-stack web development specialization</li>
-        <ul>
-            <li>HTML</li>
-            <LI>CSS</LI>
-            <LI>Javascript</LI>
-            <li>Python</li>
-            <li>Ruby</li>
-            <li>PHP</li>
-        </ul>
-        <LI>UK-PMP: Project Managment Professional Certification</LI>
-    </ul>
-    
-    <hr>
-
-    <h2>Others</h2>
-    <p>
-        <ul>
-           <li><a href="./public/hobies.html">My Hobbies</a></li> 
-           <li><a href="./public/contact me.html">Contact Me</a> </li>
-           <li>Check out my Portfolio<a href="./public/my portfolio.html"> Here</a> </li>
-        </ul>
-        
-    </p>
-
-    <hr>
-
-    <footer>
-        <p>
-            &copy; Innocent Nweke, 2023. All Rights Reserved.
-        </p>
-    </footer>
-
-
-
-
-
-
-    
-    
-    
-    
-
-
-
-
+  </div>
+  
+  
 </body>
 </html>
